@@ -1,5 +1,8 @@
-# IMPORTS
+# NONLOCAL IMPORTS
 import time
+
+# LOCAL IMPORTS
+from Functions import Log_In_1_1, Sign_In_1_1, Search_1_1, Calculate_1_1
 
 # LOOP VARS
 menuLoop = True
@@ -15,25 +18,25 @@ while menuLoop == True:
         menuLoop = False
 
         # LOG IN
-        pass
+        Log_In_1_1.LogIn()
 
     elif menuChoice == "1":
         menuLoop = False
 
         # SIGN UP
-        pass
+        Sign_In_1_1.SignIn()
 
     elif menuChoice == "2":
         menuLoop = False
 
         # SEARCH
-        pass
+        Search_1_1.Search()
 
     elif menuChoice == "3":
         menuLoop = False
 
         # CALCULATE
-        pass
+        Calculate_1_1.Calculate()
 
     else:
         print("\nInvalid Entry -> Enter one of the numbers.\n")
