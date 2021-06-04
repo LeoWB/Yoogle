@@ -12,8 +12,8 @@ print("Welcome to Yoogle 1.1")
 time.sleep(2)
 
 while menuLoop == True:
-    print("\n  [0] - Log In\n  [1] - Sign Up\n  [2] - Search\n  [3] - Calculate\n  [!] - End")
-    menuChoice = input("   > ")
+    print("\n~~ MENU ~~\n  [0] - Log In\n  [1] - Sign Up\n  [2] - Search\n  [3] - Calculate\n\n  [!] - End")
+    menuChoice = input("\n  > ")
 
     if menuChoice == "0":
         menuLoop = False
@@ -51,4 +51,4 @@ while menuLoop == True:
         menuLoop = False
 
     else:
-        print("\nInvalid Entry -> Enter one of the numbers.\n")
+        print("\nERR: Invalid Entry -> Enter one of the numbers.\n")

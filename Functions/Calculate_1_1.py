@@ -1,18 +1,35 @@
 def Calculate():
+    # FUNCTIONS
+    def BasicOperations():
 
+        basicOperationsLoop = True
+
+        print("\n~~ BASIC OPERATIONS ~~\n    + = Add\n    - = Minus\n    * = Multiply\n    / = Divide\n    ** = To the power of\n    % = Modulus\n\n    ! = Back")
+
+        while basicOperationsLoop == True:
+            calculation = input("\n    > ")
+            
+            try:
+                exec(f"\nprint({calculation})")
+            except:
+                if calculation == "!":
+                    basicOperationsLoop = False
+                else:
+                    print("\nERR: Invalid Entry -> Incorrect Syntax")
+
+    # LOOP VARS
     calculateLoop = True
 
-    print("\n~~ CALCULATE ~~")
-    
+    # CALCULATE
     while calculateLoop == True:
-        print("\n   [0] - Basic Operations\n   [1] - Geometry\n   [2] - Other\n   [!] - Back")
-        calculateChoice = input("   > ")
+        print("\n~~ CALCULATE ~~\n   [0] - Basic Operations\n   [1] - Geometry\n   [2] - Other\n\n   [!] - Back")
+        calculateChoice = input("\n   > ")
 
         if calculateChoice == "0":
             calculateLoop = False
             
             # BASIC OPERATIONS
-            
+            BasicOperations()
 
             calculateLoop = True
 
@@ -36,4 +53,5 @@ def Calculate():
             calculateLoop = False
 
         else:
-            print("\nInvalid Entry -> Enter one of the numbers or symbols.")
+            print("\nERR: Invalid Entry -> Enter one of the numbers or symbols.")
+
