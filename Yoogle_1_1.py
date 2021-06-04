@@ -13,7 +13,7 @@ time.sleep(2)
 
 while menuLoop == True:
     print("\n~~ MENU ~~\n  [0] - Log In\n  [1] - Sign Up\n  [2] - Search\n  [3] - Calculate\n\n  [!] - End")
-    menuChoice = input("\n  > ")
+    menuChoice = input("\n--> ")
 
     if menuChoice == "0":
         menuLoop = False
